@@ -1,0 +1,18 @@
+<div class="container">
+    <header>
+      <h1>Souk 4 Estaciones</h1>
+    </header>
+  
+    <main>
+      <label for="sucursales">Selecciona una sucursal:</label>
+      <select id="sucursales" (change)="onSucursalChange($event)">
+        <option *ngFor="let sucursal of sucursales" [value]="sucursal">{{ sucursal }}</option>
+      </select>
+    </main>
+  
+    <footer>
+      <p>Desarrollado por Pulloc Colombia</p>
+    </footer>
+  </div>
+  
+  
